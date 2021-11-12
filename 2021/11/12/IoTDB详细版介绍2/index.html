@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   
   
-  <title>handsomeli</title>
+  <title>IoTDB详细版教程2 | handsomeli</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="IoTDB详细版教程2这一节主要介绍一下集群。 背景由于IoTDB单节点写入性能不太好，想利用集群提升性能 下载下载地址：https:&#x2F;&#x2F;iotdb.apache.org&#x2F;Download&#x2F;  下载cluster（集群版） 官方参考文档http:&#x2F;&#x2F;iotdb.apache.org&#x2F;UserGuide&#x2F;Master&#x2F;Cluster&#x2F;Cluster-Setup.html http:&#x2F;&#x2F;iotdb.">
+  <meta name="description" content="这一节主要介绍一下集群。 背景由于IoTDB单节点写入性能不太好，想利用集群提升性能 下载下载地址：https:&#x2F;&#x2F;iotdb.apache.org&#x2F;Download&#x2F;  下载cluster（集群版） 官方参考文档http:&#x2F;&#x2F;iotdb.apache.org&#x2F;UserGuide&#x2F;Master&#x2F;Cluster&#x2F;Cluster-Setup.html http:&#x2F;&#x2F;iotdb.apache.org&#x2F;U">
 <meta property="og:type" content="article">
-<meta property="og:title" content="handsomeli">
+<meta property="og:title" content="IoTDB详细版教程2">
 <meta property="og:url" content="http://example.com/2021/11/12/IoTDB%E8%AF%A6%E7%BB%86%E7%89%88%E4%BB%8B%E7%BB%8D2/index.html">
 <meta property="og:site_name" content="handsomeli">
-<meta property="og:description" content="IoTDB详细版教程2这一节主要介绍一下集群。 背景由于IoTDB单节点写入性能不太好，想利用集群提升性能 下载下载地址：https:&#x2F;&#x2F;iotdb.apache.org&#x2F;Download&#x2F;  下载cluster（集群版） 官方参考文档http:&#x2F;&#x2F;iotdb.apache.org&#x2F;UserGuide&#x2F;Master&#x2F;Cluster&#x2F;Cluster-Setup.html http:&#x2F;&#x2F;iotdb.">
+<meta property="og:description" content="这一节主要介绍一下集群。 背景由于IoTDB单节点写入性能不太好，想利用集群提升性能 下载下载地址：https:&#x2F;&#x2F;iotdb.apache.org&#x2F;Download&#x2F;  下载cluster（集群版） 官方参考文档http:&#x2F;&#x2F;iotdb.apache.org&#x2F;UserGuide&#x2F;Master&#x2F;Cluster&#x2F;Cluster-Setup.html http:&#x2F;&#x2F;iotdb.apache.org&#x2F;U">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/2021/11/12/IoTDB%E8%AF%A6%E7%BB%86%E7%89%88%E4%BB%8B%E7%BB%8D2/1.png">
 <meta property="og:image" content="http://example.com/2021/11/12/IoTDB%E8%AF%A6%E7%BB%86%E7%89%88%E4%BB%8B%E7%BB%8D2/2.png">
@@ -19,7 +19,7 @@
 <meta property="og:image" content="http://example.com/2021/11/12/IoTDB%E8%AF%A6%E7%BB%86%E7%89%88%E4%BB%8B%E7%BB%8D2/4.png">
 <meta property="og:image" content="http://example.com/2021/11/12/IoTDB%E8%AF%A6%E7%BB%86%E7%89%88%E4%BB%8B%E7%BB%8D2/5.png">
 <meta property="article:published_time" content="2021-11-12T08:11:44.983Z">
-<meta property="article:modified_time" content="2021-11-12T09:37:36.794Z">
+<meta property="article:modified_time" content="2021-11-12T09:39:27.111Z">
 <meta property="article:author" content="lpf">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2021/11/12/IoTDB%E8%AF%A6%E7%BB%86%E7%89%88%E4%BB%8B%E7%BB%8D2/1.png">
@@ -89,10 +89,19 @@
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      IoTDB详细版教程2
+    </h1>
+  
+
+      </header>
+    
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <hr>
-<h2 id="IoTDB详细版教程2"><a href="#IoTDB详细版教程2" class="headerlink" title="IoTDB详细版教程2"></a>IoTDB详细版教程2</h2><p>这一节主要介绍一下集群。</p>
+        <p>这一节主要介绍一下集群。</p>
 <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>由于IoTDB单节点写入性能不太好，想利用集群提升性能</p>
 <h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><p>下载地址：<a target="_blank" rel="noopener" href="https://iotdb.apache.org/Download/">https://iotdb.apache.org/Download/</a></p>
 <p><img src="/2021/11/12/IoTDB%E8%AF%A6%E7%BB%86%E7%89%88%E4%BB%8B%E7%BB%8D2/1.png" alt="download"></p>
@@ -135,7 +144,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/12/IoTDB%E8%AF%A6%E7%BB%86%E7%89%88%E4%BB%8B%E7%BB%8D2/" data-id="ckvw6key50000povp7en1bju2" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/12/IoTDB%E8%AF%A6%E7%BB%86%E7%89%88%E4%BB%8B%E7%BB%8D2/" data-id="ckvw6key50000povp7en1bju2" data-title="IoTDB详细版教程2" class="article-share-link">Share</a>
       
       
       
@@ -148,7 +157,7 @@
   
     <a href="/2021/10/15/IoTDB%E8%AF%A6%E7%BB%86%E7%89%88%E4%BB%8B%E7%BB%8D1/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title"></div>
+      <div class="article-nav-title">IoTDB详细版介绍1</div>
     </a>
   
 </nav>
@@ -186,11 +195,11 @@
       <ul>
         
           <li>
-            <a href="/2021/11/12/IoTDB%E8%AF%A6%E7%BB%86%E7%89%88%E4%BB%8B%E7%BB%8D2/">(no title)</a>
+            <a href="/2021/11/12/IoTDB%E8%AF%A6%E7%BB%86%E7%89%88%E4%BB%8B%E7%BB%8D2/">IoTDB详细版教程2</a>
           </li>
         
           <li>
-            <a href="/2021/10/15/IoTDB%E8%AF%A6%E7%BB%86%E7%89%88%E4%BB%8B%E7%BB%8D1/">(no title)</a>
+            <a href="/2021/10/15/IoTDB%E8%AF%A6%E7%BB%86%E7%89%88%E4%BB%8B%E7%BB%8D1/">IoTDB详细版介绍1</a>
           </li>
         
           <li>
