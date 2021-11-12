@@ -104,8 +104,8 @@
 <p>第一个方法是按照节点1的参数直接修改文件，另外一种方法是使用sed命令：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -i -e &#x27;s/^default_replica_num=3$/default_replica_num=1/g&#x27; conf/iotdb-cluster.properties</span><br></pre></td></tr></table></figure>
 
-<p>（由于配置文件的初始值中只要replica_num不对，所以只要改这一个就好）</p>
-<p>接下来要做的工作就是把conf文件拷贝两遍，分别重命名为conf2_node和conf3_node，再按照要求修改相关参数。我们可以使用cp和sed命令完成（当然也可以直接在文件里面改参数）</p>
+<p>（由于配置文件的初始值中只有replica_num不对，所以只要改这一个就好）</p>
+<p>接下来要做的工作就是把conf文件拷贝两遍，分别重命名为node2_conf和node3_conf，再按照要求修改相关参数。我们可以使用cp和sed命令完成（当然也可以直接在文件里面改参数）</p>
 <p>使用cp命令完成copy：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp -r conf node2_confcp -r conf node3_conf</span><br></pre></td></tr></table></figure>
 
