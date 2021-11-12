@@ -123,7 +123,7 @@
 
 <p>接下来，官网使用了nohup指令启动了三个节点，在我的电脑上出现了一点问题，把日志打印出来后发现了问题：</p>
 <p><img src="/2021/11/12/IoTDB%E8%AF%A6%E7%BB%86%E7%89%88%E4%BB%8B%E7%BB%8D2/4.png" alt="problem 1"></p>
-<p>进程打开的文件数上限在windows上默认为512，无论怎么调整都不可能达到65535（这里提供一个可以让git bash运行sudo的方法，下载文件install.sh，这是下载地址：<a target="_blank" rel="noopener" href="https://github.com/handsomeli1898/shared/blob/main/install.sh%EF%BC%8C%E7%84%B6%E5%90%8E%E5%9C%A8%E6%9C%AC%E5%9C%B0%E8%BF%90%E8%A1%8C%EF%BC%89">https://github.com/handsomeli1898/shared/blob/main/install.sh，然后在本地运行）</a></p>
+<p>进程打开的文件数上限在windows上默认为512，无论怎么调整都不可能达到65535（这里提供一个可以让git bash运行sudo的方法，下载文件install.sh，然后在本地运行。这是下载地址：<a target="_blank" rel="noopener" href="https://github.com/handsomeli1898/shared/blob/main/install.sh%EF%BC%89">https://github.com/handsomeli1898/shared/blob/main/install.sh）</a></p>
 <p>为了启动节点，我们开启三个cmd，到上图中的文件夹的目录下，然后在三个不同的cmd上分别运行以下指令：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sbin\start-node.bat</span><br><span class="line">sbin\start-node.bat node2_conf</span><br><span class="line">sbin\start-node.bat node3_conf</span><br></pre></td></tr></table></figure>
 
